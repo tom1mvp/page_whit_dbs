@@ -1,1 +1,1 @@
-Esto es un ejemplo de un archivo READ ME. text 
+Esto es un ejemplo de un archivo READ ME
