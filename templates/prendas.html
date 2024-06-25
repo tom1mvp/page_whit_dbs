@@ -1,0 +1,36 @@
+{% extends 'template_base.html' %}
+
+{% block title %}
+    Prendas
+{% endblock %}
+
+{% block body %}
+    <div class="row">
+        <div class="col">
+            <a href="/agregar_prendas" class="btn btn-info">Agregar Prenda</a>
+            <a href="/eliminar_prendas" class="btn btn-info">Eliminar Prenda</a>
+        </div>
+    </div>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Tipo</th>
+                <th>Marca</th>
+                <th>Contexto</th>
+                <th>Color</th>
+                <th>Precio</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for prenda in prendas.prendas %}
+            <tr>
+                <td>{{ prenda.tipo }}</td>
+                <td>{{ prenda.marca }}</td>
+                <td>{{ prenda.contexto }}</td>
+                <td>{{ prenda.color }}</td>
+                <td>{{ prenda.precio }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

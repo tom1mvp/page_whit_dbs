@@ -1,0 +1,26 @@
+{% extends 'template_base.html' %}
+
+{% block title %} 
+    Añade una prenda
+{% endblock %}
+
+{% block body %}
+    <form action="" method="post">
+        <label for="">Tipo</label>
+        <input type="text" id="tipo_prenda" name="tipo_prenda">
+        
+        <label for="">Marca</label>
+        <input type="text" id="marca_prenda" name="marca_prenda">
+
+        <label for="">Contexto</label>
+        <input type="text"  id="contexto_prenda" name="contexto_prenda">
+
+        <label for="">Color</label>
+        <input type="text" id="color_prenda" name="color_prenda">
+        
+        <label for="">Precio</label>
+        <input type="number" min="0" max="1000000" id="precio_prenda" name="precio_prenda">
+
+        <button type="submit">Agregar prendas</button>
+    </form>
+{% endblock %}
